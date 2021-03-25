@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+   <meta charset="utf-8">
+   <title></title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="indexPage">
+		<div class="banner" >
+			<div class="img-wrap">
+				<ul>
+					<li class="item" style="display: block">
+						<img src="img/1.jpg" alt="" class="lunbo"></a>
+					</li>
+					<li class="item">
+						<img src="img/2.jpg" alt="" class="lunbo"></a>
+					</li>
+					<li class="item">
+						<img src="img/3.jpg" alt=""class="lunbo"></a>
+					</li>
+					<li class="item">
+						<img src="img/4.jpg" alt="" class="lunbo"></a>
+					</li>
+					<li class="item">
+						<img src="img/5.jpg" alt="" class="lunbo"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+       <!-- album -->
+      <div class="album"> 
+        <h4 style="color:#ffffff" class="title">The Studio Ghibli Collection</h4>
+        <h6 style="color:#ffffff" class="desc"> One of the most acclaimed studios in the world, Studio Ghibli is the home of some of the most revered and beloved animated works to have ever graced the screen.
+
+The Studio Ghibli catalogue is now available to buy or rent on digital platforms. Click on your favourite film below to order.</h6>
+        <div   class=" contain window">
+            <ul>
+              <li>
+                <div style="margin-top:50px">
+                  <a href="pages/dy1.html"><img width="100%" height="300" src="img/y1.jpg" ></a>
+                </div>
+              </li>
+			  <li>
+                 <div style="margin-top:50px">
+                  <a href="pages/dy1.html"><img width="100%" height="300" src="img/y2.jpg" ></a>
+                </div>
+              </li>
+			  <li>
+                <div style="margin-top:50px">
+                  <a href="pages/dy1.html"><img width="100%" height="300" src="img/y3.jpg" ></a>
+                </div>
+              </li>
+			  <li>
+                 <div style="margin-top:50px">
+                  <a href="pages/dy1.html"><img width="100%" height="300" src="img/y4.jpg" ></a>
+                </div>
+                
+              </li>
+			  <li>
+                 <div style="margin-top:50px">
+                 <a href="pages/dy1.html"><img width="100%" height="300" src="img/y5.jpg" ></a>
+                </div>
+              </li>
+            </ul>
+			<ul>
+              <li>
+                <div style="margin-top:50px">
+                  <a href="pages/dy1.html"><img width="100%" height="300" src="img/y6.jpg" ></a>
+                </div>
+              </li>
+			  <li>
+                <div style="margin-top:50px">
+                  <a href="pages/dy1.html"><img width="100%" height="300" src="img/y7.jpg" ></a>
+                </div>
+              </li>
+			  <li>
+                <div style="margin-top:50px">
+                  <a href="pages/dy1.html"><img width="100%" height="300" src="img/y8.jpg" ></a>
+                </div>
+              </li>
+			  <li>
+                 <div style="margin-top:50px">
+                  <a href="pages/dy1.html"><img width="100%" height="300" src="img/y9.jpg" ></a>
+                </div>
+              </li>
+			  <li>
+                 <div style="margin-top:50px">
+                  <a href="pages/dy1.html"><img width="100%" height="300" src="img/y10.jpg" ></a>
+                </div>
+              </li>
+            </ul>
+        </div>
+      </div>
+      <div  class="footer" id="footer">
+        <div class="window">
+          <p>我的测试</p>
+        </div>
+      </div>
+    </div>
+</body>
+
+
+<script src="https://www.studioghibli.com.au/wp-content/themes/ghibli/js/jquery.2.0.3.min.js"></script>
+<script type="text/javascript">
+	var index2 = 0;/*初始化一个变量 指向下彪*/
+	var time2 = setInterval(function () {
+		index2 ++;
+		if (index2 >4){ index2 = 0;}
+		$(".item").eq(index2).fadeIn().siblings().fadeOut();
+		//$(".tab-btn .btn").eq(index2).addClass("active").siblings().removeClass("active");
+
+	},2000); //定时器 重复
+</script>
+</html>
+
+
+
+
+
